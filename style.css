@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,26 +128,6 @@ nav {
   transition: all ease 1s;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: left;
-}
-
-nav ul a {
-  display: block;
-  padding: 1em;
-  color: white;
-  text-decoration: none;
-  border-bottom: thin dotted white;
-}
-
 nav i {
   padding: 1rem;
 }
-
-nav.hide {
-  left: -100%;
-}
-/*# sourceMappingURL=style.css.map */
