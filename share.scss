@@ -1,0 +1,132 @@
+$main-color:#0597F2;
+$dark-color: #0D0D0D;
+$lighter-color: #1D1D1D;
+$light-color:white;
+
+body{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family: Roboto;
+}
+
+.share-modal{
+    .content{
+        border-radius: .5em;
+        width: 92%;
+        margin: auto;
+        padding: 1em;        
+    }
+    .content::after{
+        content:"";
+        display: block;
+        margin-top: 1em;
+        border-bottom: 1px $main-color solid;
+    }
+    .body-text{
+        border-radius: .5em;
+        background-color: $lighter-color;
+        padding: .5em .75em;
+    }
+    .share-info{
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-weight: 600;
+        }
+    }
+    h1{
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+    }
+    p{
+        font-weight: 100;
+    }
+    color: $light-color;
+    img{
+        width: 100%;
+    }
+    background-color: $dark-color;
+    min-height: 100vh;
+    min-width: 100vw;
+} 
+
+.comments{
+    width: 80%;
+    margin: auto;
+    overflow-y: auto;
+    .comment{
+        margin-bottom: 1em;
+    }
+    .comment-info{
+        display: flex;
+        position: relative;
+    }
+    .user-image{
+        max-height: .5em;
+        max-width: .5em;
+        border: thin $main-color solid;
+        border-radius: 50%;
+        padding: .5em;
+    }
+    .user-name{
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        padding: .25em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .comment-body{
+        display: flex;
+        justify-content: space-between;
+        p{
+            margin: .25em 0;
+        }
+    }
+    .comment::after{
+        content: '';
+        display: block;
+        margin-top: .5em;
+        border-bottom: thin white solid;
+    }
+}
+
+.add-comment{
+    position: fixed;
+    bottom: 0;
+    min-height: 4.5em;
+    left: 0;
+    width: 100vw;
+    padding-bottom: .5em;
+    background-color: $lighter-color;
+    .add-input{
+        display: flex;
+        background-color: $light-color;
+        margin: auto;
+        padding: .25em .75em;
+        width: 80%;
+        border-radius: .5em;
+    }
+    #comment-input{
+        padding: .5em 1em;
+        width: 80%;
+        border: 0;
+        display: block;
+        margin: auto;
+    }
+    i{
+        color: $main-color;
+        font-size: 2em;
+        padding: 0 .5em;
+        text-align: center;
+    }
+}
+
+.add-comment::before{
+    content: '';
+    margin-bottom: 1em;
+    display: block;
+    border-top: thin white solid;
+}

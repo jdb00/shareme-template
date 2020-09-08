@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Roboto;
+}
+
+.share-modal {
+  color: white;
+  background-color: #0D0D0D;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.share-modal .content {
+  border-radius: .5em;
+  width: 92%;
+  margin: auto;
+  padding: 1em;
+}
+
+.share-modal .content::after {
+  content: "";
+  display: block;
+  margin-top: 1em;
+  border-bottom: 1px #0597F2 solid;
+}
+
+.share-modal .body-text {
+  border-radius: .5em;
+  background-color: #1D1D1D;
+  padding: .5em .75em;
+}
+
+.share-modal .share-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.share-modal .share-info span {
+  font-weight: 600;
+}
+
+.share-modal h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.share-modal p {
+  font-weight: 100;
+}
+
+.share-modal img {
+  width: 100%;
+}
+
+.comments {
+  width: 80%;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.comments .comment {
+  margin-bottom: 1em;
+}
+
+.comments .comment-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.comments .user-image {
+  max-height: .5em;
+  max-width: .5em;
+  border: thin #0597F2 solid;
+  border-radius: 50%;
+  padding: .5em;
+}
+
+.comments .user-name {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  padding: .25em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comments .comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment-body p {
+  margin: .25em 0;
+}
+
+.comments .comment::after {
+  content: '';
+  display: block;
+  margin-top: .5em;
+  border-bottom: thin white solid;
+}
+
+.add-comment {
+  position: fixed;
+  bottom: 0;
+  min-height: 4.5em;
+  left: 0;
+  width: 100vw;
+  padding-bottom: .5em;
+  background-color: #1D1D1D;
+}
+
+.add-comment .add-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  margin: auto;
+  padding: .25em .75em;
+  width: 80%;
+  border-radius: .5em;
+}
+
+.add-comment #comment-input {
+  padding: .5em 1em;
+  width: 80%;
+  border: 0;
+  display: block;
+  margin: auto;
+}
+
+.add-comment i {
+  color: #0597F2;
+  font-size: 2em;
+  padding: 0 .5em;
+  text-align: center;
+}
+
+.add-comment::before {
+  content: '';
+  margin-bottom: 1em;
+  display: block;
+  border-top: thin white solid;
+}
+/*# sourceMappingURL=share.css.map */
